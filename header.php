@@ -28,7 +28,11 @@ if (!defined('WT_WEBTREES')) {
 	exit;
 }
 
-global $DATE_FORMAT;
+// This theme uses the jQuery “colorbox” plugin to display images
+$this
+	->addExternalJavascript(WT_JQUERY_COLORBOX_URL)
+	->addExternalJavascript(WT_JQUERY_WHEELZOOM_URL)
+	->addInlineJavascript('activate_colorbox();');
 
 echo
 	'<!DOCTYPE html>',
@@ -38,8 +42,8 @@ echo
 	'<title>', htmlspecialchars($title), '</title>',
 	header_links($META_DESCRIPTION, $META_ROBOTS, $META_GENERATOR, $LINK_CANONICAL),
 	'<link rel="icon" href="', WT_THEME_URL, 'favicon.ico" type="image/icon">',
-	'<link rel="stylesheet" type="text/css" href="', WT_STATIC_URL, 'js/jquery/css/jquery-ui.custom.css">',
- '<link rel="stylesheet" type="text/css" href="', WT_THEME_URL, 'style.css">',
+	'<link rel="stylesheet" type="text/css" href="', WT_THEME_URL, 'jquery-ui-1.10.0/jquery-ui-1.10.0.custom.css">',
+	'<link rel="stylesheet" type="text/css" href="', WT_THEME_URL, 'style.css">',
 	'<link rel="stylesheet" type="text/css"
     href="http://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic">',
  '<link rel="stylesheet" type="text/css" href="', WT_THEME_URL, 'colors.css">';
@@ -147,13 +151,8 @@ if ($view!='simple') { // Use "simple" headers for popup windows
 				}
 				unset($menu_items, $menu);
 	echo
-			'</ul>',  // <ul id="main-menu">
-		'</div>'; // <div id="topMenu">
-	// Display feedback from asynchronous actions
-	echo '<div id="flash-messages">';
-	foreach (Zend_Controller_Action_HelperBroker::getStaticHelper('FlashMessenger')->getMessages() as $message) {
-		echo '<p class="ui-state-highlight">', $message, '</p>';
-	}
-	echo '</div>'; // <div id="flash-messages">
+		'</ul>',  // <ul id="main-menu">
+		'</div>', // <div id="topMenu">
+		WT_FlashMessages::getHtmlMessages(); // Feedback from asynchronous actions
 }
 echo $javascript, '<div id="content">';

@@ -1,0 +1,30 @@
+Modified version of the standard xenea theme for webtrees.
+
+These are the main changes:
+
+- All color definitions are moved from style.css to a new file colors.css.
+  This makes it much easier to adjust colors, and to make adjustments
+  consistent across page items.
+- The color scheme uses blue and red nuances for person boxes only. A
+  theme that uses blue for neutral elements seems to confirm that "it's a
+  man's world". OK, it is, but it doesn't have to be emphasised.
+- The look and feel is modernized. The webtrees layout is (still)
+  table-based, but it doesn't have to look that way.
+  NB: the theme uses the css3 property box-shadow, which is not recognized
+  by all browsers (read: Internet Explorer and really old browsers). There
+  are workarounds for these, and I may eventually incorporate them, but
+  only after the theme passes from the development stage to the adjustment
+  stage.
+- Minor enhancements: 
+  more logical placement of the color, theme and favorite menus; 
+  the site name is a link to the front page; 
+  personalized favicon (it's my grandfather; replace it with your own); 
+  etc.
+
+It's still very much a beta version. The colors.css file can still be
+optimized a whole lot more, and there may be bugs that I've overlooked, so
+take it for what it is. I welcome feedback and bug reports.
+
+It can be seen in action on my own site, oestrem.com/webtrees.
+
+The name: it's a "neo-xenea", and my anglicized initials are "eo"...
