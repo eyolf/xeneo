@@ -268,6 +268,7 @@ th {font-weight:100;}
 .facts_valuered, .facts_valueblue {font-size:12px;padding:4px;}
 .facts_labelred, .facts_valuered {}
 .facts_labelblue, .facts_valueblue {}
+#relatives_content .facts_value { padding: 0.2em 0; }
 .quickfacts a {font-size:9px;padding:0 3px;}
 .tabs_table {width:99%;}
 .tab_cell_active {border-width:1px;border-bottom-style:none;border-top-style:solid;border-right-style:solid;text-align:center;font-weight:bold;}
@@ -414,7 +415,9 @@ h4 {font-weight:bold;font-size:12px;}
 .details_label {font-weight:bold;}
 .topbottombar {font-weight:bold;font-size:12px;padding:4px;text-align:center;}
 .subbar {font-size:11px;padding:3px;white-space:nowrap;vertical-align:top;}
-.descriptionbox {font-size:12px;padding:4px;white-space:nowrap;vertical-align:top;}
+.descriptionbox {font-size:12px;padding:4px 4px 
+14px;white-space:nowrap;vertical-align:top;}
+#medialist-page .descriptionbox {text-align:right;}
 .optionbox {font-size:12px;padding:10px;vertical-align:top;white-space:nowrap;}
 .vmiddle {vertical-align:middle;}
 .width10 {width:10%;}
@@ -742,7 +745,7 @@ html[dir='rtl'] .desc_tree_div ul {margin-right:10px;margin-left:0;}
 #sb_clippings_content li {list-style:none;margin:0;padding:0;}
 #sb_clippings_content ul {padding:0;margin:0;}
 #sb_content_extra_info {font-size:80%;font-weight:bold;margin-top:1px;overflow:hidden;padding:5px;}
-#sb_content_extra_info .editfacts {float:right;margin-top:-30px;}
+#sb_content_extra_info .editfacts {float:right;margin-top:-15px;}
 #sb_content_extra_info a {display:block;}
 #sb_content_extra_info span {font-weight:normal;}
 #sb_content_extra_info span a {display:inline;}

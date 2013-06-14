@@ -224,13 +224,17 @@ background-color:#E0E0E0;
 .ui-tabs-nav li.ui-tabs-selected:hover,
 .ui-tabs .ui-tabs-panel,
 .ui-tabs-nav li.ui-tabs-selected,
-.ui-tabs-nav li.ui-tabs-selected a:hover {
+.ui-tabs-nav li.ui-tabs-selected a:hover,
+.facts_table {
 background:#f8f8f8;
 }
 #find-header,
 #find-media {
 background-color:#C3DFFF;
 }
+.list_value,
+.list_value_wrap,
+.facts_value,
 .optionbox  {
 background-color:#f0f0e0;
 }
@@ -265,11 +269,6 @@ background-color:#f5F5Fc;
 .news_box:target,
 #gedcom_stats:target {
 background-color:#FFC;
-}
-.list_value,
-.list_value_wrap,
-.facts_value {
-background-color:#f9f9f9;
 }
 html[dir=rtl] ui-tabs .ui-tabs-nav li.ui-tabs-selected,
 .odd {
@@ -315,7 +314,8 @@ background-color:#eed;
 .ui-tabs .ui-tabs-nav li.ui-tabs-active,
 .tab_cell_active,
 #main-menu ul,
-.makeMenu li ul {
+.makeMenu li ul,
+#relatives_content .facts_value {
 background-color:#FFF;
 }
 .ui-autocomplete li:nth-child(odd),
@@ -513,9 +513,6 @@ border:solid #C3DFaa 1px;
 .facts_labelblue {
 background-color:#9DD8FF;
 }
-.descriptionbox {
-padding-bottom:15px;
-}
 .facts_table {
     border:1px solid #ccc;
 }
@@ -600,3 +597,11 @@ opacity:0.67;
 .ui-tabs .ui-tabs-nav li.rela {
     background: #eaeee6;
 }
+
+#medialist-page div > table.table_list > tbody > tr > td {
+border-bottom: 1px solid #ccc;
+}
+#relatives_content .facts_value {
+    background: transparent;
+}
+.list_table {border: 1px solid #ccc;}
