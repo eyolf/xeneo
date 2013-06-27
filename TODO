@@ -6,7 +6,3 @@ edit/delete icons, but also the event icons. I would have liked to have them
 stacked vertically and the enclosing div floated right in the table cell, but 
 the placement is hard-coded in includes/functions/functions_print_facts.php
 
-The Charts:
-It varies strongly how the chart title is styled in relation to the selection 
-table - whether they are both included in the same table, or not.
-
