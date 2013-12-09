@@ -1,0 +1,568 @@
+
+
+
+/*Text colors*/
+.title a:hover,
+.listlog,
+.topbottombar,
+#main_name,
+#dates,
+.ui-tabs .ui-tabs-nav li a,
+.indi-list td,
+.fam-list td,
+#indi_header h3,
+.ui-tabs .ui-tabs-nav li.rela a {
+    /*Medium gray*/
+color:#555;
+}
+
+.error,
+.largeError {
+    /*Red*/
+color:#D00;
+}
+#indi_header a,
+#indi_name_details a {
+color:#337;
+}
+.ui-widget-content a {
+color:#355;
+}
+a,
+.ui-tabs-nav li.ui-tabs-active a,
+td.descriptionbox a,
+.ui-tabs-nav li.ui-tabs-active,
+.ui-tabs-nav li.ui-tabs-active a:hover {
+color:#332;
+}
+
+#tabDefinedTags tr.unsel {
+color:#888;
+}
+
+#indi_header a:hover,
+#indi_header a.warning,
+#indi_name_details .warning,
+#medialist-page .list_value_wrap a:hover,
+.favmenuitem_hover,
+.favsubmenuitem_hover a,
+.flyout2 a:hover,
+.langmenuitem_hover,
+.lifespan_outer a:hover,
+.makeMenu a:hover,
+.makeMenu li ul li a:hover,
+.nam a:hover,
+.red,
+.thememenuitem_hover,
+.ui-state-highlight a,
+.ui-tabs .ui-tabs-nav li a:hover,
+.ui-widget-content a:hover,
+.warning,
+a.warning,
+a:hover .name1,
+a:hover .name2,
+a:hover .nameZoom,
+a:hover .nameZoom,
+a:hover,
+.ui-tabs .ui-tabs-nav li:hover {
+color:red;
+}
+
+a.link:hover {
+color:#336;
+}
+#header {
+color:#333;
+}
+#footer,
+#login-form div a,
+#login-form div,
+#medialist-page .list_value_wrap a,
+#new_passwd_form div,
+#new_passwd_form h4,
+#register-form div,
+#register-form h4,
+#verify-form div,
+.details2,
+.name1,
+.name2,
+.nameZoom,
+.name_head,
+.rtl_cal_day,
+h2,
+h4,
+.helpstart {
+color:#006;
+}
+
+.facts_label02,
+.facts_label03,
+.makeMenu a,
+.theme_form,
+.favorites_form,
+.langmenuitem,
+.langmenuitem a,
+.thememenuitem,
+.thememenuitem a,
+.favmenuitem,
+.favmenuitem a,
+.blanco,
+#header,
+a.link:link,
+a.link:active,
+a.link:visited,
+a.showit:hover > span,
+.hit-counter,
+.ac_over,
+a.showit:hover span,
+#optionsmenu {
+color:#fff;
+}
+
+#footer,
+.block,
+.descriptionbox,
+.details2,
+.facts_label,
+.facts_value,
+.facts_value02,
+.favsubmenu,
+.favsubmenuitem a,
+.favsubmenuitem_selected a,
+.flyout,
+.flyout2,
+.flyout4,
+.helpheader,
+.helptext,
+.lifespan_outer a,
+.list_label,
+.list_label_wrap,
+.list_value,
+.list_value_wrap,
+.makeMenu li ul li a,
+.menuitem a,
+.menuitem,
+.menuitem_hover,
+.name1,
+.name2,
+.nameZoom,
+.name_head,
+.news_date,
+.news_title,
+.optionbox,
+.submenu,
+.submenuitem a,
+.submenuitem,
+.submenuitem_hover a,
+.submenuitem_hover,
+.themesubmenu,
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-content,
+a.showit,
+body,
+h2,
+h4,
+.barra {
+color:#000;
+}
+
+
+
+/*Background colors*/
+.ui-autocomplete-input,
+.ac_input {
+background-color:#EEE8AA;
+}
+.charts_block .person_box,
+.charts_block .person_boxNN,
+#ancestry_chart .person_box,
+#ancestry_chart .person_boxNN,
+#descendancy_chart .person_box,
+#descendancy_chart .person_boxNN,
+#family-table .person_box,
+#family-table .person_boxNN,
+#familybook_chart .person_box,
+#familybook_chart .person_boxNN,
+#hourglass_chart .person_box,
+#hourglass_chart .person_boxNN,
+#pedigree_chart .person_box,
+#pedigree_chart .person_boxNN,
+#relatives_content .person_box,
+#relatives_content .person_boxNN,
+#indi_header h3.person_box,
+.person_box {
+background-color:#e0f0f9;
+}
+.charts_block .person_boxF,
+#ancestry_chart .person_boxF,
+#descendancy_chart .person_boxF,
+#family-table .person_boxF,
+#familybook_chart .person_boxF,
+#hourglass_chart .person_boxF,
+#pedigree_chart .person_boxF,
+#relatives_content .person_boxF,
+.person_boxF {
+background-color:#fdb;
+}
+table.faq,
+div.faq_title {
+background-color:#E0E0E0;
+}
+.ui-tabs-nav li.ui-tabs-active:hover,
+.ui-tabs .ui-tabs-panel,
+.ui-tabs-nav li.ui-tabs-active,
+.ui-tabs-nav li.ui-tabs-active a:hover,
+.facts_table {
+background:#f8f8f8;
+}
+#find-header,
+#find-media {
+background-color:#C3DFFF;
+}
+.list_value,
+.list_value_wrap,
+.facts_value,
+.optionbox  {
+background-color:#f0f0e0;
+}
+.ac_over {
+background-color:#0A246A;
+}
+.ui-accordion .ui-accordion-header .ui-icon {
+/*background-color:#ccc;*/
+}
+.favsubmenuitem_selected a {
+background-color:aqua;
+}
+.person0,
+.sublinks_cell,
+.selected-option,
+.themesubmenu,
+.favsubmenu,
+.favsubmenuitem a,
+.favsubmenuitem_selected a,
+.submenu,
+.submenuitem {
+background-color:#f5F5Fc;
+}
+.person_box:target,
+.news_box:target,
+#gedcom_stats:target {
+background-color:#FFC;
+}
+html[dir=rtl] ui-tabs .ui-tabs-nav li.ui-tabs-active,
+.odd {
+background-color:#dcdcdc;
+}
+.ui-tabs .ui-tabs-nav li:hover {
+background:#dfe8e8;
+}
+table.faq tr.odd td {
+background-color:#E7EEF3;
+}
+a.showit:hover {
+background-color:#FFFF9B;
+}
+.search_hit {
+background-color:#FF0;
+}
+#optionsmenu,
+/*#pedigree_canvas,*/
+.facts_label02,
+.facts_label03 {
+background-color:#686;
+}
+#topMenu,
+#header,
+.list_label,
+.list_label_wrap,
+#search-page-table .value,
+#edituser-table .value {
+background-color:#eed;
+}
+#pedigree_chart #childbox,
+.lifespan_timeline,
+.ac_results,
+.tab_inactive_bottom,
+.tab_inactive_bottom_right,
+#tabs,
+#indi_header h3.person_boxNN,
+.favsubmenuitem_hover a,
+.even,
+#tabDefinedTags tr.unsel,
+.ui-autocomplete,
+.submenuitem_hover,
+.ui-tabs .ui-tabs-nav li.ui-tabs-active,
+#main-menu ul,
+.makeMenu li ul,
+#relatives_content .facts_value {
+background-color:#FFF;
+}
+.ui-autocomplete li:nth-child(odd),
+.person_boxNN,
+.ac_odd,
+.block,
+.blockcontent {
+background-color:#eee;
+}
+#find-output,
+#find-output-special,
+.person0,
+.submenuitem,
+.submenu,
+.selected-option,
+.sublinks_cell {
+background-color:#eed;
+}
+.flyout3,
+.flyout3 a,
+#phusb,
+#pwife,
+#shusb,
+#swife,
+#spouse {
+background:none;
+}
+
+
+/*borders*/
+.gedcom_favorites_block,
+.user_favorites_block,
+#login-form,
+#new_passwd_form,
+#register-form,
+#verify-form{
+}
+.makeMenu li ul {
+border:thin solid #C3DFFF;
+}
+#topMenu {
+border-bottom:1px solid #aaa;
+}
+#main-menu ul {
+border:thin solid #aaa;
+}
+.gedcom_table {
+border:1px solid #84BEFF;
+}
+.sublinks_table {
+border:solid #84BEFF 1px;
+}
+.parentdeath {
+border:thin solid gray;
+}
+.hit-counter {
+background:#000;
+}
+.selected-option {
+border:solid #84BEFF 1px;
+}
+.submenu {
+border:solid #84BEFF 1px;
+}
+.journal_box {
+border-bottom:thin solid #AAA;
+}
+.blockcontent .list_table {
+border:solid #aaa 1px;
+}
+.blockcontent .list_value,
+.blockcontent .list_value_wrap {
+border-top:solid #aaa 1px;
+}
+.person0 {
+border:outset #84BEFF 1px;
+}
+.person1 {
+background-color:#AFA;
+border:outset #AFA 1px;
+}
+.person2 {
+background-color:#FAA;
+border:outset #FAA 1px;
+}
+.person3 {
+background-color:#AAD;
+border:outset #55F 1px;
+}
+.person4 {
+background-color:#F55;
+border:outset #F55 1px;
+}
+.person5 {
+background-color:#5F5;
+border:outset #5F5 1px;
+}
+input,
+button,
+textarea {
+border-color:#FFF #006 #006 #FFF;
+}
+select {
+border-color:#84BEFF;
+}
+.messagebox {
+background-color:#DFEEFF;
+border:solid #C3DFaa 1px;
+}
+.new {
+outline:solid blue 1px;
+}
+.old {
+outline:solid red 1px;
+}
+a.showit:hover > span {
+border-left:15px outset #1F1F1F;
+border-top:2px solid #1F1F1F;
+border-bottom:2px solid #000;
+border-right:2px solid #000;
+background:#4F4F4F;
+}
+.ui-autocomplete {
+border:1px solid #000;
+}
+#tabDefinedTags th,
+#tabDefinedTags td {
+border:solid 1px #000;
+}
+#tabDefinedTags tr.sel {
+background-color:#D1D9EF;
+color:#888;
+}
+.ui-widget-content {
+border-color:#999;
+}
+.ui-state-active,
+.ui-widget-content .ui-state-active {
+border:1px solid #c3dfaa;
+background:#c3dfaa;
+}
+.ui-tabs .ui-tabs-nav {
+border-color:#888;
+}
+.ui-tabs .ui-tabs-nav li {
+background:#e0e8d8;
+border-color:#888;
+}
+.ui-tabs-nav li.ui-tabs-active {
+border-color:#888;
+background: #f8f8f8;
+}
+#sb_content_extra_info #hitcounter {
+border-top:1px solid #B2C7D7;
+}
+#find-output,
+#find-output-special {
+border:1px solid #C3DFFF;
+}
+#find-output p {
+border-top:1px solid #C3DFFF;
+}
+.find-media-dirs {
+border-bottom:1px solid #C3DFFF;
+}
+.find-media-media {
+border:1px solid #C3DFFF;
+}
+body {
+border:1px solid #aaa;
+}
+.facts_value02 {
+background-color:#FBFDFF;
+border:solid #C3DFaa 1px;
+}
+.facts_table {
+    border:1px solid #ccc;
+}
+a.showit:hover span {
+border-left:15px outset #1F1F1F;
+border-top:2px solid #1F1F1F;
+background:#4F4F4F;
+}
+#indi_header {
+/*border:1px solid #B2C7D7;*/
+}
+#indi_header h3.person_box {
+border:1px solid #84BEFF;
+}
+#indi_header h3.person_boxF {
+background-color:#FFecda;
+border:1px solid #FF2080;
+}
+#indi_header h3.person_boxNN {
+border:1px dashed teal;
+}
+#tabs {
+border-color:#DDD;
+}
+#sidebar {
+border-color:#DDD;
+}
+#sidebarAccordion h3,
+#sidebarAccordion2 h3 {
+border-color:#999;
+}
+#separator {
+background:#c3dfaa url(images/indi_sprite.png) no-repeat -26px 100px;
+border:1px solid #999;
+}
+html[dir=rtl] .use-sidebar #separator {
+background:#c3dfaa url(images/indi_sprite.png) no-repeat -26px 100px;
+}
+.tab_inactive_bottom,
+.tab_inactive_bottom_right {
+border-top:solid #F63 1px;
+}
+.lifespan_outer {
+border:solid blue 1px;
+}
+.pedigree_image,
+.border1 {
+border:solid #000 1px;
+}
+#search-page-table,
+#edituser-table {
+border:1px solid #ccc;
+}
+.themesubmenu,
+.favsubmenu {
+border:solid #84BEFF 1px;
+}
+html[dir=rtl] #separator,
+.use-sidebar #separator {
+background:#c3dfaa url(images/indi_sprite.png) no-repeat -1px 100px;
+}
+.chart_textbox .gallery img,
+#indi_header h3.person_boxNN,
+#indi_header h3.person_boxF,
+#indi_header h3.person_box,
+.person_boxF > .person_boxF,
+.person_boxNN > .person_boxNN {
+box-shadow:none;
+}
+.random_media_block img,
+.gallery img,
+.block,
+.person_box > .person_box,
+.person_box,
+.person_boxF,
+.person_boxNN {
+box-shadow:6px 4px 8px #bbb;
+}
+
+.user_favorites_block > .person_box, .gedcom_favorites_block > .person_box 
+{background:none;box-shadow:none;}
+.rela, .histo {
+opacity:0.67;
+}
+.ui-tabs .ui-tabs-nav li.rela { background: #eaeee6; }
+#medialist-page div > table.table_list > tbody > tr > td {
+border-bottom: 1px solid #ccc;
+}
+#relatives_content .facts_value {
+    background: transparent;
+}
+.list_table {border: 1px solid #ccc;}
+.ui-tabs-nav li:hover{background:#f8f8f8}
+.cboxPhoto {box-shadow:none;}
