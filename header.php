@@ -2,7 +2,7 @@
 // Header for xenea theme
 //
 // webtrees: Web based Family History software
-// Copyright (C) 2012 webtrees development team.
+// Copyright (C) 2013 webtrees development team.
 //
 // Derived from PhpGedView
 // Copyright (C) 2002 to 2009  PGV Development Team.  All rights reserved.
@@ -20,8 +20,6 @@
 // You should have received a copy of the GNU General Public License
 // along with this program; if not, write to the Free Software
 // Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
-//
-// $Id: header.php 14160 2012-08-11 02:30:58Z nigel $
 
 if (!defined('WT_WEBTREES')) {
 	header('HTTP/1.0 403 Forbidden');
@@ -33,10 +31,10 @@ $this
 	->addExternalJavascript(WT_JQUERY_COLORBOX_URL)
 	->addExternalJavascript(WT_JQUERY_WHEELZOOM_URL)
 	->addInlineJavascript('activate_colorbox();')
-	->addInlineJavascript('jQuery.extend(jQuery.colorbox.settings, {width:"90%", height:"90%", transition:"none", slideshowStart:"'. WT_I18N::translate('Play').'", slideshowStop:"'. WT_I18N::translate('Stop').'"})') 
+	->addInlineJavascript('jQuery.extend(jQuery.colorbox.settings, {width:"95%", height:"95%", transition:"none", slideshowStart:"'. WT_I18N::translate('Play').'", slideshowStop:"'. WT_I18N::translate('Stop').'"})') 
 	->addInlineJavascript('
 		jQuery.extend(jQuery.colorbox.settings, {
-			title:	function(){
+			title: function() {
 					var img_title = jQuery(this).data("title");
 					return img_title;
 			}
@@ -47,22 +45,20 @@ echo
 	'<html ', WT_I18N::html_markup(), '>',
 	'<head>',
 	'<meta charset="UTF-8">',
-	'<title>', htmlspecialchars($title), '</title>',
+	'<meta http-equiv="X-UA-Compatible" content="IE=edge">',
 	header_links($META_DESCRIPTION, $META_ROBOTS, $META_GENERATOR, $LINK_CANONICAL),
-	'<link rel="icon" href="', WT_THEME_URL, 'favicon.ico" type="image/icon">',
+	'<title>', WT_Filter::escapeHtml($title), '</title>',
+	'<link rel="icon" href="', WT_CSS_URL, 'favicon.png" type="image/png">',
 	'<link rel="stylesheet" type="text/css" href="', WT_THEME_URL, 'jquery-ui-1.10.3/jquery-ui-1.10.3.custom.css">',
-	'<link rel="stylesheet" type="text/css" href="', WT_THEME_URL, 'style.css">',
+	'<link rel="stylesheet" type="text/css" href="', WT_CSS_URL, 'style.css">',
+	'<!--[if IE]>',
+	'<link type="text/css" rel="stylesheet" href="', WT_CSS_URL, 'msie.css">',
+	'<![endif]-->';
+ '<link rel="stylesheet" type="text/css" href="', WT_CSS_URL, 'colors.css">';
 	'<link rel="stylesheet" type="text/css"
     href="http://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic">',
- '<link rel="stylesheet" type="text/css" href="', WT_THEME_URL, 'colors.css">';
 
 
-switch ($BROWSERTYPE) {
-//case 'chrome': uncomment when chrome.css file needs to be added, or add others as needed
-case 'msie':
-	echo '<link type="text/css" rel="stylesheet" href="', WT_THEME_URL, $BROWSERTYPE, '.css">';
-	break;
-}
 
 // Additional css files required (Only if Lightbox installed)
 if (WT_USE_LIGHTBOX) {
@@ -76,13 +72,12 @@ echo
 if ($view!='simple') { // Use "simple" headers for popup windows
 	echo 
 	'<div id="header">',
-		'<span class="title" dir="auto"><a href="index.php">',
-			WT_TREE_TITLE,
-		'</a></span>',
+		'<span class="title" dir="auto">', WT_TREE_TITLE, '</span>',
 		'<div class="hsearch">';
 	echo 
 			'<form action="search.php" method="post">',
 			'<input type="hidden" name="action" value="general">',
+			'<input type="hidden" name="ged" value="', WT_GEDCOM, '">',
 			'<input type="hidden" name="topsearch" value="yes">',
 			'<input type="search" name="query" size="12" placeholder="', WT_I18N::translate('Search'), '" dir="auto">',
 			'<input type="submit" name="search" value="&gt;">',
@@ -160,7 +155,9 @@ if ($view!='simple') { // Use "simple" headers for popup windows
 				unset($menu_items, $menu);
 	echo
 		'</ul>',  // <ul id="main-menu">
-		'</div>', // <div id="topMenu">
-		WT_FlashMessages::getHtmlMessages(); // Feedback from asynchronous actions
+		'</div>'; // <div id="topMenu">
 }
-echo $javascript, '<div id="content">';
+echo
+	$javascript,
+	WT_FlashMessages::getHtmlMessages(), // Feedback from asynchronous actions
+	'<div id="content">';
