@@ -20,8 +20,6 @@
 // You should have received a copy of the GNU General Public License
 // along with this program; if not, write to the Free Software
 // Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
-//
-// $Id: theme.php 13045 2011-12-13 09:49:52Z greg $
 
 if (!defined('WT_WEBTREES')) {
 	header('HTTP/1.0 403 Forbidden');
@@ -29,6 +27,10 @@ if (!defined('WT_WEBTREES')) {
 }
 
 $theme_name = "xeneo"; // need double quotes, as file is scanned/parsed by script
+
+// A version number in the path prevents browser-cache problems during upgrade
+define('WT_CSS_URL', WT_THEME_URL . 'css-1.5.1/');
+
 $headerfile       = WT_THEME_DIR.'header.php';
 $footerfile       = WT_THEME_DIR.'footer.php';
 

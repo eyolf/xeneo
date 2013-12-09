@@ -55,7 +55,6 @@ margin-right:5px;
 }
 html[dir=rtl] #header {
 background-position:right top;
-background-image:url(images/cabeza_rtl.png);
 }
 html[dir=rtl] .title {
 float:right;
@@ -77,8 +76,8 @@ width:100%;
 font-weight:bold;
 font-size:11px;
 height:30px;
-position:
-relative;
+position: relative;
+z-index:999;
 }
 #login-menu {
 float:left;
@@ -171,6 +170,7 @@ margin-bottom:10px;
 padding:5px 0 10px 0;
 position:relative;
 width:100%;
+z-index:998;
 }
 #main-menu 
 {
@@ -2025,7 +2025,7 @@ span.link_text {
 display:none;
 }
 .field .editlink, .field .deletelink, .field .copylink {
-float:left;
+/* float:left; */
 }
 html[dir=rtl] .editlink, html[dir=rtl] .copylink, html[dir=rtl] .deletelink {
 float:right;
@@ -2037,7 +2037,6 @@ float:left;
 float:left;
 width:98%;
 border-radius:3px;
-background:url(../jquery-ui-1.10.3/images/ui-bg_highlight-soft_100_e7eef3_1x100.png) repeat-x scroll 50% 50% #ffffff;
 margin:5px 0;
 padding:10px;
 }
@@ -2239,7 +2238,7 @@ top:50%;
 margin-top:-8px;
 }
 .ui-accordion .ui-accordion-content {
-padding:1em; /* evt fjern */
+/* padding:1em;  evt fjern */
 border-top:0;
 margin-top:-2px;
 position:relative;

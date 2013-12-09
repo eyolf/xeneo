@@ -48,15 +48,14 @@ echo
 	'<meta http-equiv="X-UA-Compatible" content="IE=edge">',
 	header_links($META_DESCRIPTION, $META_ROBOTS, $META_GENERATOR, $LINK_CANONICAL),
 	'<title>', WT_Filter::escapeHtml($title), '</title>',
-	'<link rel="icon" href="', WT_CSS_URL, 'favicon.png" type="image/png">',
+	'<link rel="icon" href="', WT_CSS_URL, 'favicon.ico" type="image/ico">',
 	'<link rel="stylesheet" type="text/css" href="', WT_THEME_URL, 'jquery-ui-1.10.3/jquery-ui-1.10.3.custom.css">',
 	'<link rel="stylesheet" type="text/css" href="', WT_CSS_URL, 'style.css">',
 	'<!--[if IE]>',
 	'<link type="text/css" rel="stylesheet" href="', WT_CSS_URL, 'msie.css">',
-	'<![endif]-->';
- '<link rel="stylesheet" type="text/css" href="', WT_CSS_URL, 'colors.css">';
-	'<link rel="stylesheet" type="text/css"
-    href="http://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic">',
+	'<![endif]-->',
+	'<link rel="stylesheet" type="text/css" href="', WT_CSS_URL, 'colors.css">',
+	'<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic">';
 
 
 
