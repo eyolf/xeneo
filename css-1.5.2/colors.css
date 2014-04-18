@@ -2,7 +2,6 @@
 
 
 /*Text colors*/
-.title a:hover,
 .listlog,
 .topbottombar,
 #main_name,
@@ -15,6 +14,12 @@
     /*Medium gray*/
 color:#555;
 }
+
+#header .title{
+    color: #686;
+}
+
+
 
 .error,
 .largeError {
@@ -566,3 +571,11 @@ border-bottom: 1px solid #ccc;
 .list_table {border: 1px solid #ccc;}
 .ui-tabs-nav li:hover{background:#f8f8f8}
 .cboxPhoto {box-shadow:none;}
+
+
+
+.lb-menu li a {color:#0000ff}
+.lb-menu li a:hover {color:#ff0000}
+
+
+.markdown th { border-bottom: 1px solid #ccb; }

@@ -1152,10 +1152,7 @@ border:none;
 height:20px;
 vertical-align:middle;
 }
-.line1, .line2, .line3 {
-vertical-align:bottom;
-}
- .line4 {
+.line1, .line2, .line3, #hourglass_chart img.line4 {
 vertical-align:middle;
 }
 .line5 {
@@ -1218,57 +1215,22 @@ margin-left:10px;
 border-collapse: collapse;
 empty-cells: show;
 }
-#familybook_chart td {
-margin:0;
-padding:0;
-}
-#familybook_chart h2 {
-text-align:center;
-}
-#familybook_chart .line3, #familybook_chart .pvline, #familybook_chart .spacer{
-width: 3px}
-#familybook_chart .line4 {
-width: 7px}
-[ID^="vline"] {
-width:3px;
-}
-#familybook_chart h3{
-font-size:16px;
-text-align:center}
-#relationship-page h3{
-margin:20px 0 0 20px}
-#relationship_chart{
-margin:0 20px 0}
-td a {
-vertical-align:top;
-}
-.tdtop {
-vertical-align:top;
-}
-.tdmid {
-vertical-align:middle;
-}
-.tdbot, .tvertline {
-vertical-align:bottom;
-}
-html[dir=rtl] #familybook_chart{
-margin-right:10px;
-}
-#pedigree-page table.list_table {
-margin:0 auto;
-width:500px;
-}
-.pedigree_chart_table {
-border:0;
-border-collapse:collapse;
-padding:0;
-width:100%;
-}
-#pedigree_chart {
-position:relative;
-top:-200px;
-left:0;
-}
+#familybook_chart td { margin:0; padding:0; }
+#familybook_chart h2 { text-align:center; }
+#familybook_chart .line3, #familybook_chart .pvline, #familybook_chart .spacer{ width: 3px}
+#familybook_chart .line4 { width: 7px; vertical-align: middle;}
+[ID^="vline"] { width:3px; }
+#familybook_chart h3{ font-size:16px; text-align:center}
+#relationship-page h3{ margin:20px 0 0 20px}
+#relationship_chart{ margin:0 20px 0}
+td a { vertical-align:top; }
+.tdtop { vertical-align:top; }
+.tdmid { vertical-align:middle; }
+.tdbot, .tvertline { vertical-align:bottom; }
+html[dir=rtl] #familybook_chart{ margin-right:10px; }
+#pedigree-page table.list_table { margin:0 auto; width:500px; }
+.pedigree_chart_table { border:0; border-collapse:collapse; padding:0; width:100%; }
+#pedigree_chart { position:relative; top:-200px; left:0; }
 #pedigree_canvas {
 position:absolute;
 top:200px;
@@ -1757,46 +1719,25 @@ width:100%;
 min-width:40px;
 text-align:center;
 }
-#lightbox-menu{
-margin-bottom:60px}
-.lb-menu{
-position:relative;
-float:left;
-list-style-type:none;
-margin:0}
-.lb-menu ul{
-list-style-type:none}
-.lb-menu li{
-font-weight:normal;
-float:left;
-top:0}
-.lb-menu>li ul{
-display:none;
-width:80px}
-.lb-menu>li:hover ul{
-display:block;
-top:36px}
-.lb-menu a{
-display:block}
-.lb-menu li a{
-padding-top:24px}
-.lb-menu li li a{
-padding:1px 10px 1px 5px}
-html[dir=rtl] .lb-menu{
-float:right}
-html[dir=rtl] .lb-menu li{
-float:right}
-li#lb-image_edit{
-background:url(images/image_edit.png) no-repeat 50% 20%}
-li#lb-image_link{
-background:url(images/image_link.png) no-repeat 50% 20%}
-li#lb-image_view{
-background:url(images/image_view.png) no-repeat 50% 20%}
-.favorites_form {
-margin-top:0;
-font-weight:bold;
-font-size:14px;
-}
+
+.lb-menu {display:inline-block; margin:0;}
+.lb-menu ul {display:block;list-style-type:none;}
+.lb-menu > li {font-weight:normal; float:left; top:0;}
+.lb-menu li:first-child {padding-left:0;}
+.lb-menu > li ul {display:none;}
+.lb-menu>li:hover ul{ display:block; top:36px}
+.lb-menu a{ display:block}
+.lb-menu li a {font-weight:normal;padding-top:24px;}
+.lb-menu li a:hover {font-weight:normal;}
+.lb-menu li li a{ padding:1px 10px 1px 5px}
+.lb-image_edit, .lb-image_link {padding-right:5px;}
+html[dir=rtl] .lb-menu > li {float:right;}
+
+.lb-image_edit {background:url(images/image_edit.png) no-repeat 50% 20%;}
+.lb-image_link {background:url(images/image_link.png) no-repeat 50% 20%;}
+.lb-image_view {background:url(images/image_view.png) no-repeat 50% 20%;}
+
+.favorites_form { margin-top:0; font-weight:bold; font-size:14px; }
 #login-register-page h2 {
 text-align:center;
 }
@@ -2101,6 +2042,23 @@ margin:0 10px 0 0;
 #indi_note .fact_SOUR a {
 font-size:100%;
 }
+
+.markdown p {
+       margin:      0 0 0.5em;
+       white-space: pre-wrap;
+}
+.markdown table {
+       border-collapse: collapse;
+}
+.markdown th {
+       font-weight: bold;
+}
+.markdown td, .markdown th {
+    padding: 3px;
+    text-align: left;
+}
+
+
 #header_accordion1 {
 float:right;
 }
@@ -2785,7 +2743,6 @@ line-height:20px;
 
 
 @media print {
-	* {margin:0;padding:0;}
 	#topMenu, #header, #optionsmenu, #header select, #header input, #footer select, #backprint, #sidebar, #separator {display:none;}
 	#header, #footer, .noprint {display:none !important;}
 	form, button, input {display:none;}
@@ -2821,7 +2778,7 @@ height:16px;
 background-image:url(images/buttons/addmedia.png)}
 .icon-button_addnote{
 width:17px;
-height:15px;
+height:20px;
 background-image:url(images/buttons/addnote.png)}
 .icon-button_addrepository{
 width:15px;
@@ -2859,10 +2816,14 @@ background-image:url(images/buttons/keyboard.png)}
 width:18px;
 height:16px;
 background-image:url(images/buttons/media.png)}
-.icon-button_note{
+.icon-button_editnote{
 width:17px;
-height:15px;
-background-image:url(images/buttons/note.png)}
+height:20px;
+background-image:url(images/buttons/editnote.png)}
+.icon-button_findnote{
+width:17px;
+height:20px;
+background-image:url(images/buttons/findnote.png)}
 .icon-button_place{
 width:15px;
 height:15px;
@@ -3251,10 +3212,6 @@ background-position:-50px -196px}
 #indi_mainimage .icon-silhouette-F {width: 99px; height:106px; background-image:url(images/silhouette_female.png);}
 #indi_mainimage .icon-silhouette-M {width: 99px; height: 99px; background-image:url(images/silhouette_male.png);}
 #indi_mainimage .icon-silhouette-U {width:100px; height: 97px; background-image:url(images/silhouette_unknown.png);}
-
-/* style needed for lightbox album icons */
-#medialist-page .list_value_wrap a {color:#0000ff;font-weight:normal}
-#medialist-page .list_value_wrap a:hover {color:#ff0000;font-weight:normal}
 
 /* Edit interface pop-ups*/
 #edit_interface-page h4 {color:#555555;margin:5px;}

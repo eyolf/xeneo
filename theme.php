@@ -5,7 +5,7 @@
 // Copyright (C) 2013 webtrees development team.
 //
 // Derived from PhpGedView
-// Copyright (C) 2002 to 2010  PGV Development Team.  All rights reserved.
+// Copyright (C) 2002 to 2010 PGV Development Team.  All rights reserved.
 //
 // This program is free software; you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -29,10 +29,10 @@ if (!defined('WT_WEBTREES')) {
 $theme_name = "xeneo"; // need double quotes, as file is scanned/parsed by script
 
 // A version number in the path prevents browser-cache problems during upgrade
-define('WT_CSS_URL', WT_THEME_URL . 'css-1.5.1/');
+define('WT_CSS_URL', WT_THEME_URL . 'css-1.5.2/');
 
-$headerfile       = WT_THEME_DIR.'header.php';
-$footerfile       = WT_THEME_DIR.'footer.php';
+$headerfile = WT_THEME_DIR.'header.php';
+$footerfile = WT_THEME_DIR.'footer.php';
 
 //-- variables for image names
 $WT_IMAGES = array(
@@ -59,10 +59,10 @@ $WT_IMAGES = array(
 
 // Variables for the Fan chart
 $fanChart = array(
-	'font' => WT_ROOT.'includes/fonts/DejaVuSans.ttf',
-	'size' => '7px',
-	'color' => '#000000',
-	'bgColor' => '#eeeeee',
+	'font'     => WT_ROOT.'includes/fonts/DejaVuSans.ttf',
+	'size'     => '7px',
+	'color'    => '#000000',
+	'bgColor'  => '#eeeeee',
 	'bgMColor' => '#b1cff0',
 	'bgFColor' => '#e9daf1'
 );
